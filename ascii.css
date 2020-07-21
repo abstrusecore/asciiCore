@@ -1,0 +1,117 @@
+html {
+    font-family: 'Press Start 2P', monospace;
+}
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 8px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 9px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    html {
+        font-size: 10px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    html {
+        font-size: 11px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    html {
+        font-size: 12px;
+    }
+}
+#container {
+    display: flex;
+    align-content: center;
+}
+#base {
+    margin: auto;
+    width: 90%;
+}
+.f1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: maroon;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+.f2 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.t {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    color: green;
+    background-color: palegoldenrod;
+    margin: 10px 10px;
+    border: 2px solid black;
+    box-sizing: border-box;
+}
+.hover {
+    background-color: yellow;
+}
+.hover2 {
+    background: goldenrod;
+}
+.active {
+    border: 2px solid lime;
+}
+#box {
+    display: flex;
+    overflow-x: scroll;
+}
+.dot {
+    background-color: navajowhite
+}
+body {
+    background-color: black;
+}
+tr {
+    text-align: center;
+}
+th, td {
+    padding: 1rem;
+    background: burlywood;
+    transition: background 0.5s;
+    transition-timing-function: ease;
+}
+table {
+    border: 3px solid black;
+    width: 100%;
+    height: auto;
+  }
+th, td {
+    border: 1px solid black;
+  }
+.string {
+    color: white;
+    font-size: 1.5rem;
+}
+.top {
+    color: black;
+    font-size: 1.5rem;
+}
+tbody {
+    color: rgb(63, 86, 155);
+}
+#a1 {
+    color: white;
+    width: 90%;
+    padding: 5%;
+    margin: auto;
+    text-align: center;
+}
+p {
+    display: block;
+}

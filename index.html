@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>asciiCore</title>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" type="text/css" href="./ascii.css">
+    </head>
+    <body>
+        <div id="base">
+            <audio id="sfx1">
+                <source src="./SFX/item get 1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="sfx2">
+                <source src="./SFX/Coin.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="sfx3">
+                <source src="./SFX/Metroid.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="sfx4">
+                <source src="./SFX/05 - MegaBuster.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <audio id="sfx5">
+                <source src="./SFX/eat_fruit.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <form>
+                <select id="anims" onchange="changeA()">
+                    <option value="galaga">Galaga</option>
+                    <option value="link">Link</option>
+                    <option value="mario">Mario</option>
+                    <option value="megaman">Megaman</option>
+                    <option value="metroid">Metroid</option>
+                    <option value="pacman">Pacman</option>
+                </select>
+            </form>
+            <div id="container">
+                <div id="a1"></div>
+            </div>
+        </div>
+        
+        <script src="./ascii.js" type="text/javascript"></script>
+    </body>
+    <footer>
+
+    </footer>
+</html>
