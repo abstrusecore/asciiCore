@@ -26,6 +26,12 @@ html {
         font-size: 12px;
     }
 }
+header {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+}
 #container {
     display: flex;
     align-content: center;
