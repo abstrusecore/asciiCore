@@ -173,6 +173,24 @@ var ascii12 = {
     "14":'  L I N K L I N K L I N K L      ',
     "15":'    L I N           K L I        ',
 }
+// var ascii13 = {
+//     "0": '         M A R I O M            ',
+//     "1": '       M A R I O M A R I O      ',
+//     "2": '       M A R I O M A R          ',
+//     "3": '     M A R I O M A R I O M      ',
+//     "4": '     M A R I O M A R I O M A    ',
+//     "5": '     M A R I O M A R I O M      ',
+//     "6": '         M A R I O M A R        ',
+//     "7": '       M A R I O M A            ',
+//     "8": '     M A R I O M A R I O M      ',
+//     "9": '   M A R I O M A R I O M A R    ',
+//     "10":'   M A R I O M A R I O M A R    ',
+//     "11":'   M A R I O M A R I O M A R    ',
+//     "12":'   M A R I O M A R I O M A R    ',
+//     "13":'       M A R I   O M A R        ',
+//     "14":'     M A R I       O M A R      ',
+//     "15":'   M A R I O       M A R I O    ',
+// }
 var ascii13 = {
     "0": '         M A R I O M            ',
     "1": '       M A R I O M A R I O      ',
@@ -182,14 +200,14 @@ var ascii13 = {
     "5": '     M A R I O M A R I O M      ',
     "6": '         M A R I O M A R        ',
     "7": '       M A R I O M A            ',
-    "8": '     M A R I O M A R I O M      ',
-    "9": '   M A R I O M A R I O M A R    ',
-    "10":'   M A R I O M A R I O M A R    ',
-    "11":'   M A R I O M A R I O M A R    ',
-    "12":'   M A R I O M A R I O M A R    ',
-    "13":'       M A R I   O M A R        ',
-    "14":'     M A R I       O M A R      ',
-    "15":'   M A R I O       M A R I O    ',
+    "8": '     M A R I O M A R I          ',
+    "9": '     M A R I O M A R I O        ',
+    "10":'     M A R I O M A R I O        ',
+    "11":'     M A R I O M A R I O        ',
+    "12":'     M A R I O M A R I          ',
+    "13":'       M A R I O M A R          ',
+    "14":'       M A R I O M A R I        ',
+    "15":'       M A R I O                ',
 }
 var ascii14 = {
     "0": '                                ',
@@ -405,41 +423,77 @@ var ascii22 = {
 
 var ascii23 = {
     "0": '                               ',
-    "1": '               g               ',
-    "2": '               g               ',
-    "3": '               g               ',
-    "4": '             g a l             ',
-    "5": '             g a l             ',
-    "6": '       g     a l a     g       ',
-    "7": '       g     a l a     g       ',
-    "8": '       g   a l a g a   g       ',
-    "9": ' g     a l a g a g a l a     g ',
-    "10":' g     a l a g a g a l a     g ',
-    "11":' g     a l a g a g a l a     g ',
-    "12":' g   a l a g a g a l a g a   g ',
-    "13":' g a l a g a g a l a g a g a l ',
-    "14":' g a l   a g a g a l a   g a g ',
-    "15":' g a     l a   g   a g     a l ',
-    "16":' g             a             l '
+    "1": '               G               ',
+    "2": '               G               ',
+    "3": '               G               ',
+    "4": '             G A L             ',
+    "5": '             G A L             ',
+    "6": '       G     A L A     G       ',
+    "7": '       G     A L A     G       ',
+    "8": '       G   A L A G A   G       ',
+    "9": ' G     A L A G A G A L A     G ',
+    "10":' G     A L A G A G A L A     G ',
+    "11":' G     A L A G A G A L A     G ',
+    "12":' G   A L A G A G A L A G A   G ',
+    "13":' G A L A G A G A L A G A G A L ',
+    "14":' G A L   A G A G A L A   G A G ',
+    "15":' G A     L A   G   A G     A L ',
+    "16":' G             A             L '
 }
 var ascii24 = {
-    "0": '               g               ',
-    "1": '               g               ',
-    "2": '               g               ',
-    "3": '             g a l             ',
-    "4": '             g a l             ',
-    "5": '       g     a l a     g       ',
-    "6": '       g     a l a     g       ',
-    "7": '       g   a l a g a   g       ',
-    "8": ' g     a l a g a g a l a     g ',
-    "9": ' g     a l a g a g a l a     g ',
-    "10":' g     a l a g a g a l a     g ',
-    "11":' g   a l a g a g a l a g a   g ',
-    "12":' g a l a g a g a l a g a g a l ',
-    "13":' g a l   a g a g a l a   g a g ',
-    "14":' g a     l a   g   a g     a l ',
-    "15":' g             a             l ',
+    "0": '               G               ',
+    "1": '               G               ',
+    "2": '               G               ',
+    "3": '             G A L             ',
+    "4": '             G A L             ',
+    "5": '       G     A L A     G       ',
+    "6": '       G     A L A     G       ',
+    "7": '       G   A L A G A   G       ',
+    "8": ' G     A L A G A G A L A     G ',
+    "9": ' G     A L A G A G A L A     G ',
+    "10":' G     A L A G A G A L A     G ',
+    "11":' G   A L A G A G A L A G A   G ',
+    "12":' G A L A G A G A L A G A G A L ',
+    "13":' G A L   A G A G A L A   G A G ',
+    "14":' G A     L A   G   A G     A L ',
+    "15":' G             A             L ',
     "16":'                               ',
+}
+var ascii25 = {
+    "0": '             G O O M             ',
+    "1": '           G O O M B A           ',
+    "2": '         G O O M B A G O         ',
+    "3": '       G O O M B A G O O M       ',
+    "4": '     G O O M B A G O O M B A     ',
+    "5": '   G O O M B A G O O M B A G O   ',
+    "6": '   G O O M B A G O O M B A G O   ',
+    "7": ' G O O M B A G O O M B A G O O M ',
+    "8": ' G O O M B A G O O M B A G O O M ',
+    "9": ' G O O M B A G O O M B A G O O M ',
+    "10":'   G O O M B A G O O M B A G O   ',
+    "11":'         G O O M B A G O         ',
+    "12":'     G O O M B A G O O M         ',
+    "13":'   G O O M B A G O O M B A       ',
+    "14":'   G O O M B A G O O M B A       ',
+    "15":'     G O O M B     A G O         ',
+}
+var ascii26 = {
+    "0": '             G O O M             ',
+    "1": '           G O O M B A           ',
+    "2": '         G O O M B A G O         ',
+    "3": '       G O O M B A G O O M       ',
+    "4": '     G O O M B A G O O M B A     ',
+    "5": '   G O O M B A G O O M B A G O   ',
+    "6": '   G O O M B A G O O M B A G O   ',
+    "7": ' G O O M B A G O O M B A G O O M ',
+    "8": ' G O O M B A G O O M B A G O O M ',
+    "9": ' G O O M B A G O O M B A G O O M ',
+    "10":'   G O O M B A G O O M B A G O   ',
+    "11":'         G O O M B A G O         ',
+    "12":'         G O O M B A G O O M     ',
+    "13":'       G O O M B A G O O M B A   ',
+    "14":'       G O O M B A G O O M B A   ',
+    "15":'         G O O     M B A G O     ',
 }
 
 
@@ -448,6 +502,7 @@ var mario = [ascii13,ascii14,ascii15,ascii16];
 var megaman = [ascii17,ascii18,ascii19,ascii20];
 var link = [ascii11,ascii12];
 var galaga = [ascii23,ascii24];
+var goomba = [ascii25,ascii26];
 var test = [ascii1];
 var pacman = [ascii6,ascii7,ascii8,ascii8_5];
 var metroid = [ascii21,ascii22];
@@ -488,6 +543,11 @@ function changeA() {
         //sound.play();
         anim = galaga;
     }
+    else if (newA === "goomba") {
+        //let sound = document.getElementById('sfx3');
+        //sound.play();
+        anim = goomba;
+    }
     console.log(anim);
 }
 
@@ -500,7 +560,7 @@ function makeAscii() {
         m += 1;
     }
     let thisA = anim[m]
-    let l = [];
+    let L = [];
     document.getElementById("a1").innerHTML = '';
     for (let k in thisA) {
         let text = thisA[k].replace(/ /g, "&nbsp;");
