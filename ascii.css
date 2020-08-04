@@ -1,7 +1,12 @@
 html {
     font-family: 'Press Start 2P', monospace;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 400px) {
+    html {
+        font-size: 4px;
+    }
+}
+@media only screen and (min-width: 500px) {
     html {
         font-size: 5px;
     }
@@ -28,82 +33,35 @@ html {
 }
 header {
     display: flex;
+    flex: 1;
     align-items: center;
     background-color: #000000;
     color: white;
+    font-size: 1.75rem;
 }
-#container,#container2 {
-    display: flex;
-    align-content: center;
+
+select {
+    width: auto;
+    height: auto;
+    background-color: black;
+    color: white;
+    font-size: 2.5rem;
+    border-radius: 0.25rem;
+    padding: 1rem;
+    margin: auto 5rem;
 }
+
+
 #base {
     margin: auto;
     width: 90%;
 }
-.f1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: maroon;
-    border: 2px solid black;
-    box-sizing: border-box;
-}
-.f2 {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.t {
-    display: flex;
-    justify-content: center;
-    height: 50px;
-    width: 200px;
-    color: green;
-    background-color: palegoldenrod;
-    margin: 10px 10px;
-    border: 2px solid black;
-    box-sizing: border-box;
-}
-.hover {
-    background-color: yellow;
-}
-.hover2 {
-    background: goldenrod;
-}
-.active {
-    border: 2px solid lime;
-}
-#box {
-    display: flex;
-    overflow-x: scroll;
-}
-.dot {
-    background-color: navajowhite
-}
+
 body {
     background-color: rgb(29, 29, 37);
 }
-tr {
-    text-align: center;
-}
-th, td {
-    padding: 1rem;
-    background: burlywood;
-    transition: background 0.5s;
-    transition-timing-function: ease;
-}
-table {
-    border: 3px solid black;
-    width: 100%;
-    height: auto;
-  }
-th, td {
-    border: 1px solid black;
-  }
-.string {
-    color: white;
-    font-size: 1.5rem;
-}
+
+
 .top {
     color: black;
     font-size: 1.5rem;
@@ -124,7 +82,7 @@ tbody {
     width: 90%;
     height: auto;
     padding: 5%;
-    margin: auto;
+    margin: 2rem auto;
     text-align: center;
 }
 
@@ -132,6 +90,23 @@ tbody {
     display: none;
 }
 
-p {
-    display: block;
+#buffer {
+    color: yellow;
+    margin: auto 6rem;
+}
+
+.small {
+    font-size: 0.75rem;
+}
+.medium1 {
+    font-size: 0.875rem;
+}
+.medium2 {
+    font-size: 1rem;
+}
+.medium3 {
+    font-size: 1.125rem;
+}
+.large {
+    font-size: 1.25rem;
 }

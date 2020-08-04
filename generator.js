@@ -1,12 +1,21 @@
 var isAnim = false;
 var Inter;
-var load;
+var load = setInterval(loading,100);
 var lo;
 var l = document.getElementById("buffer");
-load = setInterval(loading,200);
 
-const generateAscii = (width = "40", height = "40", text = "sonicthehedgehog", fps = 12, anim = "sonic",) => {
-    buffer();
+function loading() {
+    if (lo) {
+        // console.log("I'm LOADING.");
+    } else if (!lo) {
+        l.innerHTML = '';
+    }
+}
+
+
+const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", fps = 12, anim = "sonic", f = 4) => {
+    lo = true;
+    l.innerHTML = "Loading...";
     var a = document.getElementById('anims2').value;
     anim = a;
     if (isAnim === true) {
@@ -18,7 +27,7 @@ const generateAscii = (width = "40", height = "40", text = "sonicthehedgehog", f
 
         co2.innerHTML = '';
 
-        console.log(anim);
+        // console.log(anim);
     }
 
     isAnim = true;
@@ -29,39 +38,44 @@ const generateAscii = (width = "40", height = "40", text = "sonicthehedgehog", f
     var o = 0;
     var imgs = [];
     var canv = [];
-
+    cont.className = "";
     if (anim === "sonic") {
-        var images = ["sonicTest1.png","sonicTest2.png","sonicTest3.png","sonicTest4.png"];
-        console.log(images);
+        // var images = ["sonicTest1.png","sonicTest2.png","sonicTest3.png","sonicTest4.png"];
+        var images = ["sonicSheet.png"];
+        cont.className = "small";
     } else if (anim === "megaman"){
-        var images = ["test3.png","test4.png","test5.png","test6.png"];
-        width = 32;
-        height = 24;
+        var images = ["megamanSheet.png"];
+        f = 4;
+        width = 24;
+        height = 24*f;
         text = "megaman";
         fps = 7;
-        console.log(images);
+        cont.className = "medium1";
     } else if (anim === "mario"){
-        var images = ["marioTest1.png","marioTest2.png","marioTest3.png"];
+        var images = ["marioSheet1.png"];
+        f = 3;
         width = 16;
-        height = 16;
+        height = 16*f;
         text = "mario";
         fps = 9;
-        console.log(images);
+        cont.className = "large";
     } else if (anim === "blooper"){
-        var images = ["squidTest1.png","squidTest2.png"];
+        var images = ["blooperSheet.png"];
+        f = 2;
         width = 16;
-        height = 32;
+        height = 25*f;
         text = "blooper";
         fps = 4;
-        console.log(images);
+        cont.className = "medium2";
     }
     else if (anim === "pirahna"){
-        var images = ["pirahnaTest1.png","pirahnaTest2.png"];
+        var images = ["pirahnaSheet.png"];
+        f = 2;
         width = 16;
-        height = 32;
+        height = 25*f;
         text = "pirahna";
         fps = 4;
-        console.log(images);
+        cont.className = "medium2";
     }
     
 
@@ -93,8 +107,9 @@ const generateAscii = (width = "40", height = "40", text = "sonicthehedgehog", f
         h = C.height;
         w = C.width;
         imgs.push(I.id);
-        I.classList.add("hide");
-        C.classList.add("hide");
+        I2.classList.add("hide");
+        C2.classList.add("hide");
+        
         // console.log(C.height);
     });
 
@@ -111,20 +126,21 @@ const generateAscii = (width = "40", height = "40", text = "sonicthehedgehog", f
         var aList = [];
         var cList = [];
 
-        for (frame = 0; frame < o; frame++) {
+        for (frame = 0; frame < f; frame++) {
             var base = document.createElement("DIV");
             cont.appendChild(base);
             base.classList.add("hide");
             var node = document.createElement("P");
             base.id = frame.toString();
 
-            var cvs = document.getElementById(canv[frame]);
-            var gmi = document.getElementById(imgs[frame]);
+            var cvs = document.getElementById("c1");
+            var gmi = document.getElementById("img1");
             cvs.getContext("2d").drawImage(gmi, 0, 0);
 
             var imgData = cvs.getContext("2d").getImageData(0, 0, w, h);
+            var iD = imgData.data.length/f + ((imgData.data.length/f)*frame);
 
-            for (i = 0; i < imgData.data.length; i += 4) {
+            for (i = ((imgData.data.length/f)*frame); i < iD; i += 4) {
             
                 if (imgData.data[i + 3] === 255) {
                     aList.push(W[alphaI % W.length] + '&nbsp;');
@@ -174,27 +190,9 @@ const generateAscii = (width = "40", height = "40", text = "sonicthehedgehog", f
             n++;
         }
 
+        lo = false;
         Inter = setInterval(hideShow,1000/fps);
-        stopBuffer();
     };
 
 }
 generateAscii();
-
-
-function loading() {
-    if (lo === true) {
-        console.log("loading");
-        l.innerHTML = "Loading..."
-    } else {
-        l.innerHTML = '';
-    }
-}
-
-function buffer() {
-    console.log("LOAD");
-    lo = true;
-}
-function stopBuffer() {
-    lo = false;
-}

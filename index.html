@@ -14,8 +14,17 @@
         <header>
             <a href="https://abstrusecore.site"><img class="logo" src="./core.gif" alt="logo" height="64px" width="64px"></a>
             <h1>asciiCore</h1>
+            <form> 
+                <select id="anims2" onchange="generateAscii()">
+                    <option value="sonic" selected>Sonic</option>
+                    <option value="megaman">Megaman</option>
+                    <option value="mario">Mario</option>
+                    <option value="blooper">Blooper</option>
+                    <option value="pirahna">Pirahna</option>
+                </select>
+            </form>
+            <h2 id="buffer"></h2>
         </header>
-        <h2 id="buffer"></h2>
         <div id="base">
             <audio id="sfx1">
                 <source src="./SFX/item get 1.mp3" type="audio/mpeg">
@@ -48,15 +57,6 @@
                     <option value="pacman">Pacman</option>
                 </select>
             </form> -->
-            <form> 
-                <select id="anims2" onchange="generateAscii()">
-                    <option value="sonic" selected>Sonic</option>
-                    <option value="megaman">Megaman</option>
-                    <option value="mario">Mario</option>
-                    <option value="blooper">Blooper</option>
-                    <option value="pirahna">Pirahna</option>
-                </select>
-            </form>
             <div id="container2">
             </div>
 
