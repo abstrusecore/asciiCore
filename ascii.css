@@ -3,27 +3,27 @@ html {
 }
 @media only screen and (max-width: 600px) {
     html {
-        font-size: 8px;
+        font-size: 5px;
     }
 }
 @media only screen and (min-width: 600px) {
     html {
-        font-size: 9px;
+        font-size: 6px;
     }
 }
 @media only screen and (min-width: 768px) {
     html {
-        font-size: 10px;
+        font-size: 7px;
     }
 }
 @media only screen and (min-width: 992px) {
     html {
-        font-size: 11px;
+        font-size: 8px;
     }
 }
 @media only screen and (min-width: 1200px) {
     html {
-        font-size: 12px;
+        font-size: 9px;
     }
 }
 header {
@@ -32,7 +32,7 @@ header {
     background-color: #000000;
     color: white;
 }
-#container {
+#container,#container2 {
     display: flex;
     align-content: center;
 }
@@ -81,7 +81,7 @@ header {
     background-color: navajowhite
 }
 body {
-    background-color: black;
+    background-color: rgb(29, 29, 37);
 }
 tr {
     text-align: center;
@@ -114,10 +114,24 @@ tbody {
 #a1 {
     color: white;
     width: 90%;
+    height: auto;
     padding: 5%;
     margin: auto;
     text-align: center;
 }
+#container2 > div {
+    color: white;
+    width: 90%;
+    height: auto;
+    padding: 5%;
+    margin: auto;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
 p {
     display: block;
 }
