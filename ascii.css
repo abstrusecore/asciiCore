@@ -94,7 +94,9 @@ tbody {
     color: yellow;
     margin: auto 6rem;
 }
-
+.xtrasmall {
+    font-size: 0.5rem;
+}
 .small {
     font-size: 0.75rem;
 }

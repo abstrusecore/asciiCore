@@ -34,33 +34,83 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
 
     var cont = document.getElementById("container2");
     var imageBox = document.getElementById("images");
-    console.log(imageBox);
     var o = 0;
     var imgs = [];
     var canv = [];
     cont.className = "";
     if (anim === "sonic") {
-        // var images = ["sonicTest1.png","sonicTest2.png","sonicTest3.png","sonicTest4.png"];
-        var images = ["sonicSheet.png"];
         cont.className = "small";
     } else if (anim === "megaman"){
-        var images = ["megamanSheet.png"];
         f = 4;
         width = 24;
         height = 24*f;
         text = "megaman";
         fps = 7;
         cont.className = "medium1";
+    } else if (anim === "megamanX"){
+        f = 10;
+        width = 34;
+        height = 36*f;
+        text = "megaman";
+        fps = 18;
+        cont.className = "small";
     } else if (anim === "mario"){
-        var images = ["marioSheet1.png"];
         f = 3;
         width = 16;
         height = 16*f;
         text = "mario";
         fps = 9;
         cont.className = "large";
+    } else if (anim === "marioRPG"){
+        f = 4;
+        width = 24;
+        height = 32*f;
+        text = "mario";
+        fps = 8;
+        cont.className = "medium1";
+    } else if (anim === "marioKart"){
+        f = 8;
+        width = 48;
+        height = 48*f;
+        text = "mariokart";
+        fps = 10;
+        cont.className = "xtrasmall";
+    } else if (anim === "shell1"){
+        f = 8;
+        width = 32;
+        height = 26*f;
+        text = "greenshell";
+        fps = 12;
+        cont.className = "small";
+    } else if (anim === "dk"){
+        f = 10;
+        width = 48;
+        height = 42*f;
+        text = "donkeykong";
+        fps = 12;
+        cont.className = "xtrasmall";
+    } else if (anim === "yoshi"){
+        f = 9;
+        width = 32;
+        height = 32*f;
+        text = "yoshi";
+        fps = 12;
+        cont.className = "small";
+    } else if (anim === "link"){
+        f = 2;
+        width = 16;
+        height = 16*f;
+        text = "link";
+        fps = 7;
+        cont.className = "large";
+    } else if (anim === "link2"){
+        f = 8;
+        width = 16;
+        height = 25*f;
+        text = "link";
+        fps = 16;
+        cont.className = "medium2";
     } else if (anim === "blooper"){
-        var images = ["blooperSheet.png"];
         f = 2;
         width = 16;
         height = 25*f;
@@ -69,7 +119,6 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
         cont.className = "medium2";
     }
     else if (anim === "pirahna"){
-        var images = ["pirahnaSheet.png"];
         f = 2;
         width = 16;
         height = 25*f;
@@ -77,13 +126,90 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
         fps = 4;
         cont.className = "medium2";
     }
+    else if (anim === "kirby"){
+        f = 4;
+        width = 16;
+        height = 16*f;
+        text = "kirby";
+        fps = 8;
+        cont.className = "large";
+    } else if (anim === "kirby2"){
+        f = 8;
+        width = 24;
+        height = 24*f;
+        text = "kirby";
+        fps = 10;
+        cont.className = "medium2";
+    }
+    else if (anim === "pacman"){
+        f = 4;
+        width = 16;
+        height = 16*f;
+        text = "pacman";
+        fps = 10;
+        cont.className = "large";
+    }
+    else if (anim === "mspacman"){
+        f = 4;
+        width = 16;
+        height = 16*f;
+        text = "misspacman";
+        fps = 10;
+        cont.className = "large";
+    }
+    else if (anim === "blinky"){
+        f = 2;
+        width = 16;
+        height = 16*f;
+        text = "blinky";
+        fps = 8;
+        cont.className = "large";
+    }
+    else if (anim === "inky"){
+        f = 2;
+        width = 16;
+        height = 16*f;
+        text = "inky";
+        fps = 8;
+        cont.className = "large";
+    }
+    else if (anim === "pinky"){
+        f = 2;
+        width = 16;
+        height = 16*f;
+        text = "pinky";
+        fps = 8;
+        cont.className = "large";
+    }
+    else if (anim === "clyde"){
+        f = 2;
+        width = 16;
+        height = 16*f;
+        text = "clyde";
+        fps = 8;
+        cont.className = "large";
+    }
+    else if (anim === "ghost"){
+        f = 2;
+        width = 16;
+        height = 16*f;
+        text = "ghost";
+        fps = 8;
+        cont.className = "large";
+    }
+    else if (anim === "excitebike"){
+        f = 2;
+        width = 24;
+        height = 24*f;
+        text = "excitebike";
+        fps = 16;
+        cont.className = "medium1";
+    }
     
-
+    var images = [`${anim}Sheet.png`];
     var ctxs = [];
     var h = 0;
     var w = 0;
-    var data = [];
-    var anim = 1;
 
     images.forEach(im => {
         o++;
@@ -163,6 +289,7 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
                     base.appendChild(node);
                     aList = [];
                     cList = [];
+                    alphaI = 0;
                 }
             }
         }
