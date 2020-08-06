@@ -40,6 +40,8 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
     cont.className = "";
     if (anim === "sonic") {
         cont.className = "small";
+    } if (anim === "knuckles") {
+        cont.className = "small";
     } else if (anim === "megaman"){
         f = 4;
         width = 24;
@@ -55,19 +57,40 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
         fps = 18;
         cont.className = "small";
     } else if (anim === "mario"){
-        f = 3;
+        f = 12;
         width = 16;
-        height = 16*f;
+        height = 32*f;
         text = "mario";
         fps = 9;
-        cont.className = "large";
+        cont.className = "medium2";
+    } else if (anim === "mario2"){
+        f = 12;
+        width = 16;
+        height = 32*f;
+        text = "mario";
+        fps = 10;
+        cont.className = "medium2";
     } else if (anim === "marioRPG"){
         f = 4;
         width = 24;
         height = 32*f;
         text = "mario";
         fps = 8;
-        cont.className = "medium1";
+        cont.className = "small";
+    } else if (anim === "bowser"){
+        f = 4;
+        width = 32;
+        height = 32*f;
+        text = "bowser";
+        fps = 6;
+        cont.className = "small";
+    } else if (anim === "bowser2"){
+        f = 4;
+        width = 40;
+        height = 40*f;
+        text = "bowser";
+        fps = 8;
+        cont.className = "xtrasmall";
     } else if (anim === "marioKart"){
         f = 8;
         width = 48;
@@ -90,6 +113,13 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
         fps = 12;
         cont.className = "xtrasmall";
     } else if (anim === "yoshi"){
+        f = 3;
+        width = 32;
+        height = 32*f;
+        text = "yoshi";
+        fps = 10;
+        cont.className = "small";
+    } else if (anim === "yoshi2"){
         f = 9;
         width = 32;
         height = 32*f;
@@ -204,7 +234,36 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
         text = "excitebike";
         fps = 16;
         cont.className = "medium1";
+    } else if (anim === "frisk"){
+        f = 8;
+        width = 24;
+        height = 30*f;
+        text = "frisk";
+        fps = 7;
+        cont.className = "medium1";
+    } else if (anim === "sans"){
+        f = 8;
+        width = 24;
+        height = 30*f;
+        text = "sans";
+        fps = 7;
+        cont.className = "medium1";
+    } else if (anim === "kidYing"){
+        f = 8;
+        width = 24;
+        height = 36*f;
+        text = "kidying";
+        fps = 10;
+        cont.className = "medium1";
+    } else if (anim === "drYang"){
+        f = 8;
+        width = 24;
+        height = 36*f;
+        text = "dryang";
+        fps = 10;
+        cont.className = "medium1";
     }
+
     
     var images = [`${anim}Sheet.png`];
     var ctxs = [];
