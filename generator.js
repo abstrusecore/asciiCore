@@ -56,6 +56,41 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
         text = "megaman";
         fps = 18;
         cont.className = "small";
+    } else if (anim === "invader"){
+        f = 2;
+        width = 11;
+        height = 8*f;
+        text = "invader";
+        fps = 4;
+        cont.className = "large";
+    } else if (anim === "simon"){
+        f = 4;
+        width = 26;
+        height =32*f;
+        text = "simon";
+        fps = 6;
+        cont.className = "small";
+    } else if (anim === "samus"){
+        f = 12;
+        width = 26;
+        height =32*f;
+        text = "samus";
+        fps = 10;
+        cont.className = "small";
+    } else if (anim === "metroid"){
+        f = 4;
+        width = 24;
+        height =24*f;
+        text = "metroid";
+        fps = 10;
+        cont.className = "small";
+    } else if (anim === "pit"){
+        f = 9;
+        width = 16;
+        height =25*f;
+        text = "simon";
+        fps = 10;
+        cont.className = "medium2";
     } else if (anim === "mario"){
         f = 12;
         width = 16;
