@@ -10,101 +10,42 @@
         />
         <title>asciiCore</title>
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet"> 
+        <link rel="icon" href="./favicon.ico" type="image/x-icon">
         <link rel="stylesheet" type="text/css" href="./ascii.css">
     </head>
 
     
     <body id="b">
 
+        <template id="list1">
+            <select id="anims2" onchange="generateAscii()">
+                <option v-for="o in opt" :value="o.val">
+                    {{ o.text }}
+                </option>
+            </select>
+        </template>
 
-        <header>
-            <a href="https://abstrusecore.site"><img class="logo" src="./core.gif" alt="logo" height="64px" width="64px"></a>
+        <header id="head">
+            <a href="https://abstrusecore.github.io"><img class="logo" src="./core.gif" alt="logo" height="64px" width="64px"></a>
             <h1>asciiCore</h1>
-            <form> 
-                <select id="anims2" onchange="generateAscii()">
-                    <option value="sonic" selected>Sonic (Retro)</option>
-                    <option value="knuckles">Knuckles (Retro)</option>
-                    <option value="megaman">Megaman (Retro)</option>
-                    <option value="megamanX">Megaman (X)</option>
-                    <option value="simon">Simon (Retro)</option>
-                    <option value="invader">Space Invader</option>
-                    <option value="samus">Samus (Retro)</option>
-                    <option value="metroid">Metroid (Retro)</option>
-                    <option value="pit">Pit (Retro)</option>
-                    <option value="mario">Mario (Retro)</option>
-                    <option value="mario2">Mario (Retro 2)</option>
-                    <option value="marioRPG">Mario (RPG)</option>
-                    <option value="bowser">Bowser (Retro)</option>
-                    <option value="bowser2">Bowser (RPG)</option>
-                    <option value="marioKart">Mario (Kart)</option>
-                    <option value="shell1">Green Shell</option>
-                    <option value="dk">Donkey Kong</option>
-                    <option value="yoshi">Yoshi (Retro)</option>
-                    <option value="yoshi2">Yoshi (Island)</option>
-                    <option value="blooper">Blooper</option>
-                    <option value="pirahna">Pirahna</option>
-                    <option value="link">Link (Retro)</option>
-                    <option value="link2">Link (Retro 2)</option>
-                    <option value="kirby">Kirby (Retro)</option>
-                    <option value="kirby2">Kirby (Retro 2)</option>
-                    <option value="pacman">Pac-Man</option>
-                    <option value="mspacman">Ms.Pac-Man</option>
-                    <option value="blinky">Blinky</option>
-                    <option value="inky">Inky</option>
-                    <option value="pinky">Pinky</option>
-                    <option value="clyde">Clyde</option>
-                    <option value="ghost">Ghost</option>
-                    <option value="excitebike">Excitebike</option>
-                    <option value="frisk">Frisk</option>
-                    <option value="sans">Sans</option>
-                    <option value="kidYing">Kid Ying</option>
-                    <option value="drYang">Dr. Yang</option>
-                </select>
+            <form>
+                <item1 :opt="optList"></item1>
             </form>
-            <h2 id="buffer"></h2>
         </header>
         <div id="base">
-            <audio id="sfx1">
-                <source src="./SFX/item get 1.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <audio id="sfx2">
-                <source src="./SFX/Coin.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <audio id="sfx3">
-                <source src="./SFX/Metroid.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <audio id="sfx4">
-                <source src="./SFX/05 - MegaBuster.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <audio id="sfx5">
-                <source src="./SFX/eat_fruit.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-            <!-- <form>
-                <select id="anims" onchange="changeA()">
-                    <option value="galaga" selected>Galaga</option>
-                    <option value="goomba">Goomba</option>
-                    <option value="link">Link</option>
-                    <option value="mario">Mario</option>
-                    <option value="megaman">Megaman</option>
-                    <option value="metroid">Metroid</option>
-                    <option value="pacman">Pacman</option>
-                </select>
-            </form> -->
+            
             <div id="container2">
             </div>
 
             <div id="container">
+                <h2 id="buffer"></h2>
                 <div id="a1"></div>
             </div>
             <div id="images"></div>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+        <script src="./vue1.js" type="text/javascript"></script>
         <script src="./generator.js" type="text/javascript"></script>
-        <!-- <script src="./ascii.js" type="text/javascript"></script> -->
     </body>
     <footer>
 

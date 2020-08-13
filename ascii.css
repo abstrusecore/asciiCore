@@ -1,5 +1,6 @@
 html {
     font-family: 'Press Start 2P', monospace;
+    cursor: url(../images/cursor1.png) 4 4, auto;
 }
 @media only screen and (min-width: 400px) {
     html {
@@ -48,10 +49,18 @@ select {
     border-radius: 0.25rem;
     padding: 1rem;
     margin-left: 5rem;
+    cursor: url(../images/cursor2.png) 4 4, pointer;
 }
 
 form {
     margin: auto 2rem;
+    cursor: url(../images/cursor2.png) 4 4, pointer;
+}
+a {
+    cursor: url(../images/cursor2.png) 4 4, pointer;
+}
+a:active {
+    cursor: url(../images/cursor3.png) 4 4, pointer;
 }
 
 #base {

@@ -13,7 +13,7 @@ function loading() {
 }
 
 
-const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", fps = 12, anim = "sonic", f = 4) => {
+const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, anim = "sonic", f = 4) => {
     lo = true;
     l.innerHTML = "Loading...";
     var a = document.getElementById('anims2').value;
@@ -41,6 +41,7 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
     if (anim === "sonic") {
         cont.className = "small";
     } if (anim === "knuckles") {
+        text = "knuckles";
         cont.className = "small";
     } else if (anim === "megaman"){
         f = 4;
@@ -88,7 +89,7 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
         f = 9;
         width = 16;
         height =25*f;
-        text = "simon";
+        text = "pit";
         fps = 10;
         cont.className = "medium2";
     } else if (anim === "mario"){
@@ -106,10 +107,17 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
         fps = 10;
         cont.className = "medium2";
     } else if (anim === "marioRPG"){
-        f = 4;
-        width = 24;
-        height = 32*f;
+        f = 14;
+        width = 30;
+        height = 34*f;
         text = "mario";
+        fps = 8;
+        cont.className = "small";
+    } else if (anim === "gRPG"){
+        f = 14;
+        width = 30;
+        height = 34*f;
+        text = "geno";
         fps = 8;
         cont.className = "small";
     } else if (anim === "bowser"){
@@ -270,7 +278,7 @@ const generateAscii = (width = "40", height = "160", text = "sonicthehedgehog", 
         fps = 16;
         cont.className = "medium1";
     } else if (anim === "frisk"){
-        f = 8;
+        f = 4;
         width = 24;
         height = 30*f;
         text = "frisk";
