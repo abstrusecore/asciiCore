@@ -13,6 +13,8 @@ function loading() {
 }
 
 
+
+
 const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, anim = "sonic", f = 4) => {
     lo = true;
     l.innerHTML = "Loading...";
@@ -305,6 +307,55 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         text = "dryang";
         fps = 10;
         cont.className = "medium1";
+    } else if (anim === "1poke123"){
+        f = 3;
+        width = 56;
+        height = 56*f;
+        text = "BulbasaurIvysaurVenasaur";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke456"){
+        f = 3;
+        width = 56;
+        height = 56*f;
+        text = "CharmanderCharmeleonCharizard";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke789"){
+        f = 3;
+        width = 56;
+        height = 56*f;
+        text = "SquirtleWartortleBlastoise";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke10-12"){
+        f = 3;
+        width = 56;
+        height = 56*f;
+        text = "CaterpieMetapodButterfree";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke13-15"){
+        f = 3;
+        width = 56;
+        height = 56*f;
+        text = "WeedleKakunaBeedrill";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke16-18"){
+        f = 3;
+        width = 56;
+        height = 56*f;
+        text = "PidgeyPidgeottoPidgeot";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke1920"){
+        f = 2;
+        width = 56;
+        height = 56*f;
+        text = "RattataRaticate";
+        fps = 1;
+        cont.className = "xtrasmall";
     }
 
     
@@ -397,7 +448,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         }
 
         var list = [];
-        var n = 1;
+        var n = 0;
 
         for (let index = 1; index < cont.children.length - 1; index++) {
             list.push(anim);
@@ -409,14 +460,21 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
             // var ch = cont.children;
             // var prev = ch[list[0]];
             // var child = ch[list[1]];
-            var prev = cont.children[(n - 1) % cont.children.length];
-            var child = cont.children[n % cont.children.length];
-            prev.classList.add("hide");
-            child.classList.remove("hide");
+            if (cont.children.length >= 2) {
+                if (n > 0) {
+                    var prev = cont.children[(n - 1) % cont.children.length];
+                    prev.classList.add("hide");
+                }
+                var child = cont.children[n % cont.children.length];
+                child.classList.remove("hide");
+                n++;
+            } else {
+                cont.children[0].classList.remove("hide");
+                clearInterval(Inter);
+            }
 
             // child.classList.add("hide");
             // prev.classList.remove("hide");
-            n++;
         }
 
         lo = false;
@@ -424,4 +482,3 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
     };
 
 }
-generateAscii();

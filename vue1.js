@@ -2,10 +2,15 @@ Vue.component('item1', {
     props: ['opt'],
     template: '#list1'
 })
+Vue.component('item2', {
+    props: ['poke'],
+    template: '#list2'
+})
 
 var optApp = new Vue({
     el: '#head',
     data: {
+        sNum: '0',
         optList: [
             { val: 'sonic', text: 'Sonic (Sonic the Hedgehog)' },
             { val: 'knuckles', text: 'Knuckles (Sonic 3 & Knuckles)' },
@@ -45,6 +50,21 @@ var optApp = new Vue({
             { val: 'sans', text: 'Sans (Undertale)' },
             { val: 'kidYing', text: 'Kid Ying (The Legend of the Mystical Ninja)' },
             { val: 'drYang', text: 'Dr. Yang (The Legend of the Mystical Ninja)' },
+        ],
+        pokeList: [
+            { val: '1poke123', text: 'Bulbasaur/Ivysaur/Venasaur' },
+            { val: '1poke456', text: 'Charmander/Charmeleon/Charizard' },
+            { val: '1poke789', text: 'Squirtle/Wartortle/Blastoise' },
+            { val: '1poke10-12', text: 'Caterpie/Metapod/Butterfree' },
+            { val: '1poke13-15', text: 'Weedle/Kakuna/Beedrill' },
+            { val: '1poke16-18', text: 'Pidgey/Pidgeotto/Pidgeot' },
+            { val: '1poke1920', text: 'Rattata/Raticate' },
         ]
+    },
+    methods: {
+        handleSelect: function (event) {
+          this.sNum = event.target.value;
+          console.log(this.sNum);
+        }
     }
-  })
+})

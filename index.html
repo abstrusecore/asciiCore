@@ -19,21 +19,37 @@
 
         <template id="list1">
             <select id="anims2" onchange="generateAscii()">
+                <option hidden disabled selected value> -- select an character -- </option>
                 <option v-for="o in opt" :value="o.val">
                     {{ o.text }}
                 </option>
             </select>
         </template>
 
+        <template id="list2">
+            <select id="anims2" onchange="generateAscii()">
+                <option hidden disabled selected value> -- select a pokemon -- </option>
+                <option v-for="p in poke" :value="p.val">
+                    {{ p.text }}
+                </option>
+            </select>
+        </template>
+
+
         <header id="head">
             <a href="https://abstrusecore.github.io"><img class="logo" src="./core.gif" alt="logo" height="64px" width="64px"></a>
             <h1>asciiCore</h1>
+            
             <form>
-                <item1 :opt="optList"></item1>
+                <select id="select" v-on:change="handleSelect">
+                    <option value="0">Retro Videogame Characters</option>
+                    <option value="1"> Pokemon: Generation 1</option>
+                </select>
+                <item1 :opt="optList" v-if="sNum === '0'"></item1>
+                <item2 :poke="pokeList" v-else-if="sNum === '1'"></item2>
             </form>
         </header>
         <div id="base">
-            
             <div id="container2">
             </div>
 
