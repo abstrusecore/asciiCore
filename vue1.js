@@ -6,6 +6,10 @@ Vue.component('item2', {
     props: ['poke'],
     template: '#list2'
 })
+Vue.component('item3', {
+    props: ['paint'],
+    template: '#list3'
+})
 
 var optApp = new Vue({
     el: '#head',
@@ -59,6 +63,26 @@ var optApp = new Vue({
             { val: '1poke13-15', text: 'Weedle/Kakuna/Beedrill' },
             { val: '1poke16-18', text: 'Pidgey/Pidgeotto/Pidgeot' },
             { val: '1poke1920', text: 'Rattata/Raticate' },
+            { val: '1poke2122', text: 'Spearow/Fearow' },
+            { val: '1poke2324', text: 'Ekans/Arbok' },
+            { val: '1poke2526', text: 'Pikachu/Raichu' },
+            { val: '1poke2728', text: 'Sandshrew/Sandslash' },
+            { val: '1poke29-31', text: 'Nidoran/Nidorina/Nidoqueen' },
+            { val: '1poke32-34', text: 'Nidoran/Nidorino/Nidoking' },
+            { val: '1poke3536', text: 'Clefairy/Clefable' },
+            { val: '1poke3738', text: 'Vulpix/Ninetales' },
+            { val: '1poke3940', text: 'Jigglypuff/Wigglytuff' },
+            { val: '1poke4142', text: 'Zubat/Golbat' },
+            { val: '1poke43-45', text: 'Oddish/Gloom/Vileplume' },
+            { val: '1poke4647', text: 'Paras/Parasect' },
+            { val: '1poke4849', text: 'Venonat/Venomoth' },
+            { val: '1poke5051', text: 'Diglett/Dugtrio' },
+        ],
+        paintList: [
+            { val: './paintings/monalisa', text: 'Mona Lisa by Leonardo da Vinci' },
+            { val: './paintings/gothic', text: 'American Gothic by Grant Wood' },
+            { val: './paintings/memory', text: 'The Persistence of Memory by Salvador Dali' },
+            { val: './paintings/nighthawk', text: 'Nighthawks by Edward Hopper' },
         ]
     },
     methods: {

@@ -356,6 +356,139 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         text = "RattataRaticate";
         fps = 1;
         cont.className = "xtrasmall";
+    } else if (anim === "1poke2122"){
+        f = 2;
+        width = 56;
+        height = 56*f;
+        text = "SpearowFearow";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke2324"){
+        f = 2;
+        width = 56;
+        height = 56*f;
+        text = "EkansArbok";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke2526"){
+        f = 2;
+        width = 56;
+        height = 56*f;
+        text = "PikachuRaichu";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke2728"){
+        f = 2;
+        width = 56;
+        height = 56*f;
+        text = "SandshrewSandslash";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke29-31"){
+        f = 3;
+        width = 56;
+        height = 56*f;
+        text = "NidoranNidorinaNidoqueen";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke32-34"){
+        f = 3;
+        width = 56;
+        height = 56*f;
+        text = "NidoranNidorinoNidoking";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke3536"){
+        f = 2;
+        width = 56;
+        height = 56*f;
+        text = "ClefairyClefable";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke3738"){
+        f = 2;
+        width = 56;
+        height = 56*f;
+        text = "VulpixNinetales";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke3940"){
+        f = 2;
+        width = 56;
+        height = 56*f;
+        text = "JigglypuffWigglytuff";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke4142"){
+        f = 2;
+        width = 56;
+        height = 56*f;
+        text = "ZubatGolbat";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke43-45"){
+        f = 3;
+        width = 56;
+        height = 56*f;
+        text = "OddishGloomVileplume";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke4647"){
+        f = 2;
+        width = 56;
+        height = 56*f;
+        text = "ParasParasect";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke4849"){
+        f = 2;
+        width = 56;
+        height = 56*f;
+        text = "VenonatVenomoth";
+        fps = 1;
+        cont.className = "xtrasmall";
+    } else if (anim === "1poke5051"){
+        f = 2;
+        width = 56;
+        height = 56*f;
+        text = "DiglettDugtrio";
+        fps = 1;
+        cont.className = "xtrasmall";
+    }
+
+
+
+
+
+
+      else if (anim === "./paintings/monalisa"){
+        f = 1;
+        width = 100;
+        height = 151*f;
+        text = "MONALISA";
+        fps = 1;
+        cont.className = "xtrasmall0";
+    } else if (anim === "./paintings/gothic"){
+        f = 1;
+        width = 100;
+        height = 120*f;
+        text = "AMERICANGOTHIC";
+        fps = 1;
+        cont.className = "xtrasmall0";
+    } else if (anim === "./paintings/memory"){
+        f = 1;
+        width = 100;
+        height = 120*f;
+        text = "MEMORY";
+        fps = 1;
+        cont.className = "xtrasmall0";
+    } else if (anim === "./paintings/nighthawk"){
+        f = 1;
+        width = 100;
+        height = 120*f;
+        text = "NIGHTHAWKS";
+        fps = 1;
+        cont.className = "xtrasmall0";
     }
 
     
