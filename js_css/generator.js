@@ -695,7 +695,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         f = 1;
         width = 64;
         height = 96*f;
-        text = "MONALISA";
+        text = "MonaLisa";
         fps = 1;
         cont.className = "xtrasmall";
     } else if (anim === "gothic"){
@@ -703,7 +703,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         f = 1;
         width = 64;
         height = 76*f;
-        text = "AMERICANGOTHIC";
+        text = "AmericanGothic";
         fps = 1;
         cont.className = "xtrasmall";
     } else if (anim === "memory"){
@@ -711,7 +711,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         f = 1;
         width = 64;
         height = 48*f;
-        text = "MEMORY";
+        text = "Memory";
         fps = 1;
         cont.className = "xtrasmall";
     } else if (anim === "nighthawk"){
@@ -719,7 +719,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         f = 1;
         width = 64;
         height = 34*f;
-        text = "NIGHTHAWKS";
+        text = "Nighthawks";
         fps = 1;
         cont.className = "xtrasmall";
     } else if (anim === "creationofadam"){
@@ -727,7 +727,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         f = 1;
         width = 64;
         height = 28*f;
-        text = "CREATIONOFADAM";
+        text = "CreationOfAdam";
         fps = 1;
         cont.className = "xtrasmall";
     } else if (anim === "sunday"){
@@ -735,7 +735,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         f = 1;
         width = 64;
         height = 42*f;
-        text = "LAGRANDEJATTE";
+        text = "LaGrandeJatte";
         fps = 1;
         cont.className = "xtrasmall";
     } else if (anim === "pearlearring"){
@@ -743,7 +743,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         f = 1;
         width = 64;
         height = 74*f;
-        text = "PEARLEARRING";
+        text = "PearlEarring";
         fps = 1;
         cont.className = "xtrasmall";
     } else if (anim === "starrynight"){
@@ -751,7 +751,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         f = 1;
         width = 64;
         height = 50*f;
-        text = "STARRYNIGHT";
+        text = "StarryNight";
         fps = 1;
         cont.className = "xtrasmall";
     } else if (anim === "venus"){
@@ -759,7 +759,35 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         f = 1;
         width = 64;
         height = 39*f;
-        text = "BIRTHOFVENUS";
+        text = "BirthOfVenus";
+        fps = 1;
+        cont.className = "xtrasmall";
+    }
+
+
+
+      else if (anim === "david"){
+        anim = "./sculptures/" + anim;
+        f = 1;
+        width = 64;
+        height = 96*f;
+        text = "David";
+        fps = 1;
+        cont.className = "xtrasmall";
+    }  else if (anim === "ecstasy"){
+        anim = "./sculptures/" + anim;
+        f = 1;
+        width = 64;
+        height = 101*f;
+        text = "SaintTheresa";
+        fps = 1;
+        cont.className = "xtrasmall";
+    }  else if (anim === "laocoon"){
+        anim = "./sculptures/" + anim;
+        f = 1;
+        width = 64;
+        height = 57*f;
+        text = "Laocoon";
         fps = 1;
         cont.className = "xtrasmall";
     }

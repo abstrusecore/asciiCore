@@ -63,6 +63,15 @@
             </select>
         </template>
 
+        <template id="list6">
+            <select id="anims2" onchange="generateAscii()">
+                <option hidden disabled selected value> -- select a sculpture -- </option>
+                <option v-for="s in sculpt" :value="s.val">
+                    {{ s.text }}
+                </option>
+            </select>
+        </template>
+
 
         <header id="head">
             <a href="https://abstrusecore.github.io"><img class="logo" src="./core.gif" alt="logo" height="64px" width="64px"></a>
@@ -74,12 +83,14 @@
                     <option value="1">Pokemon: Generation 1</option>
                     <option value="2">Pokemon: Gen 1 Cards</option>
                     <option value="3">Pokemon: Generation 2</option>
+                    <option value="4">Famous Sculptures</option>
                     <option value="10">Famous Paintings</option>
                 </select>
                 <item1 :opt="optList" v-if="sNum === '0'"></item1>
                 <item2 :poke="pokeList" v-else-if="sNum === '1'"></item2>
                 <item4 :poke2="pokeList2" v-else-if="sNum === '2'"></item4>
                 <item5 :poke3="pokeList3" v-else-if="sNum === '3'"></item5>
+                <item6 :sculpt="sculptList" v-else-if="sNum === '4'"></item6>
                 <item3 :paint="paintList" v-else-if="sNum === '10'"></item2>
             </form>
         </header>

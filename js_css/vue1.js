@@ -18,6 +18,10 @@ Vue.component('item5', {
     props: ['poke3'],
     template: '#list5'
 })
+Vue.component('item6', {
+    props: ['sculpt'],
+    template: '#list6'
+})
 
 var optApp = new Vue({
     el: '#head',
@@ -121,7 +125,13 @@ var optApp = new Vue({
             { val: 'starrynight', text: 'Starry Night by Vincent Van Gogh' },
             { val: 'venus', text: 'The Birth of Venus by Sandro Boticelli' },
             
-        ]
+        ],
+        sculptList: [
+            { val: 'david', text: 'David by Michelangelo' },
+            { val: 'ecstasy', text: 'Ecstasy of Saint Theresa by Bernini' },
+            { val: 'laocoon', text: 'Laocoon and His Sons by Agesander, Athenodoros, and Polydorus' }
+        ],
+        
     },
     methods: {
         handleSelect: function (event) {
