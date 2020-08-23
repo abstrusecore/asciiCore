@@ -90,7 +90,7 @@
                 <select id="select" v-on:change="handleSelect">
                     <option value="0">Retro Videogame Characters</option>
                     <option value="1">Pokemon: Generation 1</option>
-                    <option value="2">Pokemon: Gen 1 Cards</option>
+                    <!-- <option value="2">Pokemon: Gen 1 Cards</option> -->
                     <option value="3">Pokemon: Generation 2</option>
                     <option value="4">Famous Sculptures</option>
                     <option value="5">Famous Paintings</option>
@@ -98,7 +98,7 @@
                 </select>
                 <item1 :opt="optList" v-if="sNum === '0'"></item1>
                 <item2 :poke="pokeList" v-else-if="sNum === '1'"></item2>
-                <item4 :poke2="pokeList2" v-else-if="sNum === '2'"></item4>
+                <!-- <item4 :poke2="pokeList2" v-else-if="sNum === '2'"></item4> -->
                 <item5 :poke3="pokeList3" v-else-if="sNum === '3'"></item5>
                 <item6 :sculpt="sculptList" v-else-if="sNum === '4'"></item6>
                 <item3 :paint="paintList" v-else-if="sNum === '5'"></item3>
