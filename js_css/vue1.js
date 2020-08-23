@@ -22,6 +22,10 @@ Vue.component('item6', {
     props: ['sculpt'],
     template: '#list6'
 })
+Vue.component('item7', {
+    props: ['movie'],
+    template: '#list7'
+})
 
 var optApp = new Vue({
     el: '#head',
@@ -129,7 +133,13 @@ var optApp = new Vue({
         sculptList: [
             { val: 'david', text: 'David by Michelangelo' },
             { val: 'ecstasy', text: 'Ecstasy of Saint Theresa by Bernini' },
-            { val: 'laocoon', text: 'Laocoon and His Sons by Agesander, Athenodoros, and Polydorus' }
+            { val: 'laocoon', text: 'Laocoon and His Sons' }
+        ],
+        movieList: [
+            { val: 'matrixDodge', text: 'The Matrix (Bullet Dodge)' },
+            { val: 'sparta', text: '300 (This is Sparta!)' },
+            { val: 'lionKing', text: 'The Lion King (Mufasa Falls)' },
+            { val: 'shining', text: "The Shining (Here's Johnny!)" }
         ],
         
     },

@@ -1,22 +1,10 @@
 var isAnim = false;
 var Inter;
-var load = setInterval(loading,100);
-var lo;
 var l = document.getElementById("buffer");
-
-function loading() {
-    if (lo) {
-        // console.log("I'm LOADING.");
-    } else if (!lo) {
-        l.innerHTML = '';
-    }
-}
-
 
 
 
 const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, anim = "sonic", f = 4) => {
-    lo = true;
     l.innerHTML = "Loading...";
     var a = document.getElementById('anims2').value;
     anim = a;
@@ -43,7 +31,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
     if (anim === "sonic") {
         anim = "./retro/" + anim;
         cont.className = "small";
-    } if (anim === "knuckles") {
+    } else if (anim === "knuckles") {
         anim = "./retro/" + anim;
         text = "knuckles";
         cont.className = "small";
@@ -792,6 +780,41 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         cont.className = "xtrasmall";
     }
 
+
+       else if (anim === "matrixDodge"){
+        anim = "./movies/" + anim;
+        f = 26;
+        width = 64;
+        height = 40*f;
+        text = "matrix";
+        fps = 3;
+        cont.className = "xtrasmall";
+    } else if (anim === "sparta"){
+        anim = "./movies/" + anim;
+        f = 21;
+        width = 64;
+        height = 40*f;
+        text = "300";
+        fps = 3;
+        cont.className = "xtrasmall";
+    } else if (anim === "lionKing"){
+        anim = "./movies/" + anim;
+        f = 26;
+        width = 64;
+        height = 40*f;
+        text = "ScarVsMufasa";
+        fps = 3;
+        cont.className = "xtrasmall";
+    } else if (anim === "shining"){
+        anim = "./movies/" + anim;
+        f = 22;
+        width = 64;
+        height = 40*f;
+        text = "Heresjohnny!";
+        fps = 3;
+        cont.className = "xtrasmall";
+    }
+
     
     var images = [`${anim}.png`];
     var ctxs = [];
@@ -890,6 +913,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
                     alphaI = 0;
                 }
             }
+            l.innerHTML = "";
         }
 
         var list = [];
@@ -922,7 +946,6 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
             // prev.classList.remove("hide");
         }
 
-        lo = false;
         Inter = setInterval(hideShow,1000/fps);
     };
 
