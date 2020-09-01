@@ -612,7 +612,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         cont.className = "xtrasmall";
     } else if (anim === "36"){
         anim = "./kanto/" + anim;
-        f = 2;
+        f = 1;
         width = 56;
         height = 56*f;
         text = "Farfetch'd";
@@ -660,7 +660,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         cont.className = "xtrasmall";
     } else if (anim === "42"){
         anim = "./kanto/" + anim;
-        f = 2;
+        f = 1;
         width = 56;
         height = 56*f;
         text = 'Onix';
@@ -716,7 +716,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         cont.className = "xtrasmall";
     } else if (anim === "49"){
         anim = "./kanto/" + anim;
-        f = 2;
+        f = 1;
         width = 56;
         height = 56*f;
         text = 'Lickitung';
@@ -1097,7 +1097,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         cont.className = "xtrasmall";
     } else if (anim === "!19"){
         anim = "./johto/" + anim;
-        f = 3;
+        f = 1;
         width = 56;
         height = 56*f;
         text = 'Politoed';
@@ -2379,7 +2379,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
             // child.classList.add("hide");
             // prev.classList.remove("hide");
         }
-
+        hideShow()
         Inter = setInterval(hideShow,1000/fps);
     };
 

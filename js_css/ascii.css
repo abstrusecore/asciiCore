@@ -76,7 +76,7 @@ a:active {
 
 body {
     /* background-color: rgb(29, 29, 37); */
-    background-color: black;
+    background: black url(../ASCII.gif) repeat fixed center;
 }
 
 
