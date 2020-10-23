@@ -64,7 +64,6 @@ var optApp = new Vue({
             { val: 'inky', text: 'Inky (Pac-Man)' },
             { val: 'pinky', text: 'Pinky (Pac-Man)' },
             { val: 'clyde', text: 'Clyde (Pac-Man)' },
-            { val: 'ghost', text: 'Ghost (Pac-Man)' },
             { val: 'excitebike', text: 'Biker (Excitebike)' },
             { val: 'frisk', text: 'Frisk (Undertale)' },
             { val: 'sans', text: 'Sans (Undertale)' },
@@ -313,6 +312,8 @@ var optApp = new Vue({
             { val: 'laocoon', text: 'Laocoon and His Sons' },
             { val: 'discus', text: 'Discus Thrower' },
             { val: 'venus2', text: 'Venus de Milo by Alexandros' },
+            { val: 'vanhalen', text: 'Eddie Van Halen' },
+            { val: 'billie', text: 'Billie Eilish' }
         ],
         movieList: [
             { val: 'matrixDodge', text: 'The Matrix (Bullet Dodge)' },

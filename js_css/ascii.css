@@ -55,6 +55,7 @@ select {
 form {
     margin: auto 2rem;
     cursor: url(./cursors/cursor2.png) 4 4, pointer;
+    color: rgb(255, 205, 205);
 }
 a {
     cursor: url(./cursors/cursor2.png) 4 4, pointer;
@@ -76,7 +77,8 @@ a:active {
 
 body {
     /* background-color: rgb(29, 29, 37); */
-    background: black url(../ASCII.gif) repeat fixed center;
+    /* background: black url(../ASCII.gif) repeat fixed center; */
+    background-color: black;
 }
 
 

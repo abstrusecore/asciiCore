@@ -1,10 +1,13 @@
 var isAnim = false;
 var Inter;
 var l = document.getElementById("buffer");
+var asc = true;
 
+const modeSwitch = () => {
+    asc = !asc;
+}
 
-
-const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, anim = "sonic", f = 4) => {
+const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, anim = "sonic", f = 4, mode = asc) => {
     l.innerHTML = "Loading...";
     var a = document.getElementById('anims2').value;
     anim = a;
@@ -281,15 +284,6 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         width = 16;
         height = 16*f;
         text = "clyde";
-        fps = 8;
-        cont.className = "large";
-    }
-    else if (anim === "ghost"){
-        anim = "./retro/" + anim;
-        f = 2;
-        width = 16;
-        height = 16*f;
-        text = "ghost";
         fps = 8;
         cont.className = "large";
     }
@@ -2210,6 +2204,22 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         text = "venus";
         fps = 1;
         cont.className = "xtrasmall";
+    }  else if (anim === "vanhalen"){
+        anim = "./sculptures/" + anim;
+        f = 1;
+        width = 64;
+        height = 80*f;
+        text = "vanhalen";
+        fps = 1;
+        cont.className = "medium3";
+    }  else if (anim === "billie"){
+        anim = "./sculptures/" + anim;
+        f = 1;
+        width = 64;
+        height = 80*f;
+        text = "billieeilish";
+        fps = 1;
+        cont.className = "medium3";
     }
 
 
@@ -2318,18 +2328,48 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
                 var im1 = imgData.data[i+1];
                 var im2 = imgData.data[i+2];
                 var im3 = imgData.data[i+3];
-                // var imT = im0+im1+im2;
+                var imT = im0+im1+im2;
             
-                if (imgData.data[i + 3] > 200) {
-                    aList.push(W[alphaI % W.length] + '&nbsp;');
-                    cList.push("(" + `${im0},${im1},${im2}` + ")");
-                    alphaI += 1;
-                } else if (im3 === 0) {
-                    aList.push('*&nbsp;');
-                    // aList.push('&nbsp;&nbsp;');
-                    cList.push('(50,50,50)');
-                    // cList.push('(0,0,0)');
+                if (mode === true)
+                {
+                    if (imT > 600) {
+                        aList.push('@&nbsp;');
+                        alphaI += 1;
+                    } else if (imT > 450 && imT < 600) {
+                        aList.push('#&nbsp;');
+                        // aList.push('&nbsp;&nbsp;');
+                    } else if (imT > 300 && imT < 450) {
+                        aList.push('*&nbsp;');
+                        // aList.push('&nbsp;&nbsp;');
+                    } else if (imT > 150 && imT < 300) {
+                        aList.push('+&nbsp;');
+                        // aList.push('&nbsp;&nbsp;');
+                    } else if (imT > 75 && imT < 150) {
+                        aList.push(':&nbsp;');
+                        // aList.push('&nbsp;&nbsp;');
+                    } else if (imT === 0) {
+                        aList.push('`&nbsp;');
+                        // aList.push('&nbsp;&nbsp;');
+                    } else {
+                        aList.push('-&nbsp;');
+                        // aList.push('&nbsp;&nbsp;');
+                    }
+                    // cList.push("(" + `${im0},${im1},${im2}` + ")");
+                    cList.push('(255,255,255)');
                 } 
+                else 
+                {
+                    if (imgData.data[i + 3] > 200) {
+                        aList.push(W[alphaI % W.length] + '&nbsp;');
+                        cList.push("(" + `${im0},${im1},${im2}` + ")");
+                        alphaI += 1;
+                    } else if (im3 === 0) {
+                        aList.push('*&nbsp;');
+                        // aList.push('&nbsp;&nbsp;');
+                        cList.push('(50,50,50)');
+                        // cList.push('(0,0,0)');
+                    } 
+                }
 
                 if (aList.length === w)
                 { 
