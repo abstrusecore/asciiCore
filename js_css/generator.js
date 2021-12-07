@@ -2315,28 +2315,28 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
             
                 if (mode === true)
                 {
-                    if (imT > 600) {
+                    if (imT >= 600) {
                         aList.push('@&nbsp;');
                         alphaI += 1;
-                    } else if (imT > 525 && imT < 600) {
+                    } else if (imT >= 525 && imT < 600) {
                         aList.push('%&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
-                    } else if (imT > 450 && imT < 525) {
+                    } else if (imT >= 450 && imT < 525) {
                         aList.push('#&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
-                    } else if (imT > 375 && imT < 450) {
+                    } else if (imT >= 375 && imT < 450) {
                         aList.push('*&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
-                    } else if (imT > 300 && imT < 375) {
+                    } else if (imT >= 300 && imT < 375) {
                         aList.push('+&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
-                    } else if (imT > 225 && imT < 300) {
+                    } else if (imT >= 225 && imT < 300) {
                         aList.push('=&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
-                    } else if (imT > 150 && imT < 225) {
+                    } else if (imT >= 150 && imT < 225) {
                         aList.push('-&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
-                    } else if (imT > 75 && imT < 150) {
+                    } else if (imT >= 75 && imT < 150) {
                         aList.push(':&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
                     } else if (imT === 0) {
