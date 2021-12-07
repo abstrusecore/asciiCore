@@ -2342,7 +2342,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
                     } else if (imT === 0) {
                         // aList.push('`&nbsp;');
                         aList.push('&nbsp;&nbsp;');
-                    } else {
+                    } else if (imT > 0 && imT < 75) {
                         aList.push('.&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
                     }
