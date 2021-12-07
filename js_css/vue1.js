@@ -148,7 +148,7 @@ var optApp = new Vue({
             { val: '77', text: 'Mewtwo' },
             { val: '78', text: 'Mew' },
         ],
-/*         pokeList2: [
+  /*       pokeList2: [
             { val: '!!1', text: 'Bulbasaur/Ivysaur/Venasaur' },
             { val: '!!2', text: 'Charmander/Charmeleon/Charizard' },
             { val: '!!3', text: 'Squirtle/Wartortle/Blastoise' },
@@ -311,16 +311,14 @@ var optApp = new Vue({
             { val: 'ecstasy', text: 'Ecstasy of Saint Theresa by Bernini' },
             { val: 'laocoon', text: 'Laocoon and His Sons' },
             { val: 'discus', text: 'Discus Thrower' },
-            { val: 'venus2', text: 'Venus de Milo by Alexandros' },
-            { val: 'vanhalen', text: 'Eddie Van Halen' },
-            { val: 'billie', text: 'Billie Eilish' }
+            { val: 'venus2', text: 'Venus de Milo by Alexandros' }
         ],
-        movieList: [
+        /* movieList: [
             { val: 'matrixDodge', text: 'The Matrix (Bullet Dodge)' },
             { val: 'sparta', text: '300 (This is Sparta!)' },
             { val: 'lionKing', text: 'The Lion King (Mufasa Falls)' },
             { val: 'shining', text: "The Shining (Here's Johnny!)" }
-        ],
+        ], */
         
     },
     methods: {

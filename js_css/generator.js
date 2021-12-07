@@ -1487,7 +1487,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
 
 
 
-/*     else if (anim === "!!1"){
+    /* else if (anim === "!!1"){
         anim = "./pokecards/" + anim;
         f = 3;
         width = 64;
@@ -2164,7 +2164,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
 
 
 
-      else if (anim === "david"){
+      /* else if (anim === "david"){
         anim = "./sculptures/" + anim;
         f = 1;
         width = 64;
@@ -2204,27 +2204,10 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         text = "venus";
         fps = 1;
         cont.className = "xtrasmall";
-    }  else if (anim === "vanhalen"){
-        anim = "./sculptures/" + anim;
-        f = 1;
-        width = 64;
-        height = 80*f;
-        text = "vanhalen";
-        fps = 1;
-        cont.className = "medium3";
-    }  else if (anim === "billie"){
-        anim = "./sculptures/" + anim;
-        f = 1;
-        width = 64;
-        height = 80*f;
-        text = "billieeilish";
-        fps = 1;
-        cont.className = "medium3";
-    }
+    } */
 
 
-
-       else if (anim === "matrixDodge"){
+/*        else if (anim === "matrixDodge"){
         anim = "./movies/" + anim;
         f = 26;
         width = 64;
@@ -2257,7 +2240,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
         fps = 3;
         cont.className = "xtrasmall";
     }
-
+ */
     
 
     var images = [`${anim}.png`];
@@ -2335,23 +2318,32 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
                     if (imT > 600) {
                         aList.push('@&nbsp;');
                         alphaI += 1;
-                    } else if (imT > 450 && imT < 600) {
+                    } else if (imT > 525 && imT < 600) {
+                        aList.push('%&nbsp;');
+                        // aList.push('&nbsp;&nbsp;');
+                    } else if (imT > 450 && imT < 525) {
                         aList.push('#&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
-                    } else if (imT > 300 && imT < 450) {
+                    } else if (imT > 375 && imT < 450) {
                         aList.push('*&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
-                    } else if (imT > 150 && imT < 300) {
+                    } else if (imT > 300 && imT < 375) {
                         aList.push('+&nbsp;');
+                        // aList.push('&nbsp;&nbsp;');
+                    } else if (imT > 225 && imT < 300) {
+                        aList.push('=&nbsp;');
+                        // aList.push('&nbsp;&nbsp;');
+                    } else if (imT > 150 && imT < 225) {
+                        aList.push('-&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
                     } else if (imT > 75 && imT < 150) {
                         aList.push(':&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
                     } else if (imT === 0) {
-                        aList.push('`&nbsp;');
-                        // aList.push('&nbsp;&nbsp;');
+                        // aList.push('`&nbsp;');
+                        aList.push('&nbsp;&nbsp;');
                     } else {
-                        aList.push('-&nbsp;');
+                        aList.push('.&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
                     }
                     // cList.push("(" + `${im0},${im1},${im2}` + ")");
@@ -2364,10 +2356,10 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
                         cList.push("(" + `${im0},${im1},${im2}` + ")");
                         alphaI += 1;
                     } else if (im3 === 0) {
-                        aList.push('*&nbsp;');
-                        // aList.push('&nbsp;&nbsp;');
-                        cList.push('(50,50,50)');
-                        // cList.push('(0,0,0)');
+                        // aList.push('*&nbsp;');
+                        aList.push('&nbsp;&nbsp;');
+                        // cList.push('(50,50,50)');
+                        cList.push('(0,0,0)');
                     } 
                 }
 

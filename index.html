@@ -16,7 +16,7 @@
 
     
     <body id="b">
-        <p id="copy">2020 Abstruse Core &copy;</p>
+        <p id="copy">2021 Abstruse Core &copy;</p>
 
         <template id="list1">
             <select id="anims2" onchange="generateAscii()">
@@ -92,17 +92,17 @@
                     <option value="1">Pokemon: Generation 1</option>
                     <!-- <option value="2">Pokemon: Gen 1 Cards</option> -->
                     <option value="3">Pokemon: Generation 2</option>
-                    <!-- <option value="4">Famous Sculptures</option>
-                    <option value="5">Famous Paintings</option>
-                    <option value="6">Movie Scenes</option> -->
+                    <!-- <option value="4">Famous Sculptures</option> -->
+                    <!-- <option value="5">Famous Paintings</option> -->
+                    <!-- <option value="6">Movie Scenes</option> -->
                 </select>
                 <item1 :opt="optList" v-if="sNum === '0'"></item1>
                 <item2 :poke="pokeList" v-else-if="sNum === '1'"></item2>
                 <!-- <item4 :poke2="pokeList2" v-else-if="sNum === '2'"></item4> -->
                 <item5 :poke3="pokeList3" v-else-if="sNum === '3'"></item5>
-                <item6 :sculpt="sculptList" v-else-if="sNum === '4'"></item6>
-                <item3 :paint="paintList" v-else-if="sNum === '5'"></item3>
-                <item7 :movie="movieList" v-else-if="sNum === '6'"></item7>
+                <!-- <item6 :sculpt="sculptList" v-else-if="sNum === '4'"></item6> -->
+                <!-- <item3 :paint="paintList" v-else-if="sNum === '5'"></item3> -->
+                <!-- <item7 :movie="movieList" v-else-if="sNum === '6'"></item7> -->
 
             </form>
         </header>
