@@ -2342,7 +2342,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
                     } else if (imT === 0) {
                         // aList.push('`&nbsp;');
                         aList.push('&nbsp;&nbsp;');
-                    } else if (imT > 0 && imT < 75) {
+                    } else if (imT > 1 && imT < 75) {
                         aList.push('.&nbsp;');
                         // aList.push('&nbsp;&nbsp;');
                     }
@@ -2355,7 +2355,7 @@ const generateAscii = (width = "40", height = "160", text = "sonic", fps = 12, a
                         aList.push(W[alphaI % W.length] + '&nbsp;');
                         cList.push("(" + `${im0},${im1},${im2}` + ")");
                         alphaI += 1;
-                    } else if (im3 === 0) {
+                    } else if (im3 > 1) {
                         // aList.push('*&nbsp;');
                         aList.push('&nbsp;&nbsp;');
                         // cList.push('(50,50,50)');
